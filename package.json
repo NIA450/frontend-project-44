@@ -1,24 +1,43 @@
 {
-  "name": "@hexlet/code",
-  "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/NIA450/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/NIA450/frontend-project-44/actions)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "type": "module",
+  "name": "@hexlet/nodejs-package",
+  "version": "0.0.3",
+  "description": "Node.js boilerplate package",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "nodejs-package": "bin/nodejs-package.js"
   },
+  "simple-git-hooks": {
+    "pre-push": "npx lint-staged"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexlet-boilerplates/nodejs-package.git"
+  },
+  "author": "Kirill Mokevnin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hexlet-boilerplates/nodejs-package/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/hexlet-boilerplates/nodejs-package#readme",
   "dependencies": {
+    "debug": "^4.3.5",
+    "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.8.0",
-    "eslint": "^9.8.0",
-    "eslint-plugin-react": "^7.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
     "globals": "^15.9.0"
   }
 }
