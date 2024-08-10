@@ -3,7 +3,9 @@
   "version": "0.0.3",
   "description": "Node.js boilerplate package",
   "bin": {
-    "nodejs-package": "bin/nodejs-package.js"
+    "nodejs-package": "bin/nodejs-package.js",
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "simple-git-hooks": {
     "pre-push": "npx lint-staged"
