@@ -32,7 +32,6 @@ const getQuestion = () => {
   return { question: `${num1} ${operator} ${num2}`, correctAnswer };
 };
 
-// Функция для начала игры
 const startGame = () => {
   console.log('Welcome to the Brain Games!');
 
@@ -61,5 +60,4 @@ const startGame = () => {
   console.log(`Congratulations, ${name}!`);
 };
 
-// Экспортируем функцию startGame
 export default startGame;
