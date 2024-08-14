@@ -6,7 +6,8 @@
     "nodejs-package": "bin/nodejs-package.js",
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
-    "brain-calc": "bin/brain-calc.js"
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd.js": "bin/brain-gcd.js"
   },
   "simple-git-hooks": {
     "pre-push": "npx lint-staged"
