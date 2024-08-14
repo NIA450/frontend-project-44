@@ -1,25 +1,23 @@
 import readlineSync from 'readline-sync';
 
-// Функция для генерации арифметической прогрессии
 const generateProgression = (length, start, step, hiddenIndex) => {
   const progression = [];
   for (let i = 0; i < length; i += 1) {
     progression.push(start + i * step);
   }
   const correctAnswer = progression[hiddenIndex];
-  progression[hiddenIndex] = '..'; // Скрываем элемент
+  progression[hiddenIndex] = '..';
   return { question: progression.join(' '), correctAnswer: correctAnswer.toString() };
 };
 
-// Основная логика игры
 const game = {
   getInstructions: () => 'What number is missing in the progression?',
 
   getQuestion: () => {
-    const length = Math.floor(Math.random() * 6) + 5; // Длина от 5 до 10
-    const start = Math.floor(Math.random() * 10); // Начало прогрессии
-    const step = Math.floor(Math.random() * 5) + 1; // Шаг прогрессии от 1 до 5
-    const hiddenIndex = Math.floor(Math.random() * length); // Случайный индекс для скрытого числа
+    const length = Math.floor(Math.random() * 6) + 5;
+    const start = Math.floor(Math.random() * 10);
+    const step = Math.floor(Math.random() * 5) + 1;
+    const hiddenIndex = Math.floor(Math.random() * length);
 
     return generateProgression(length, start, step, hiddenIndex);
   },
@@ -53,4 +51,4 @@ const runProgressionGame = (progressionGame) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export { runProgressionGame, game }; // Экспортируем как runProgressionGame, так и game
+export { runProgressionGame, game };
