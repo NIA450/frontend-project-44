@@ -8,7 +8,8 @@
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
     "brain-gcd.js": "bin/brain-gcd.js",
-    "brain-progression.js": "bin/brain-progression.js"
+    "brain-progression.js": "bin/brain-progression.js",
+    "brain-prime.js": "bin/brain-prime.js"
   },
   "simple-git-hooks": {
     "pre-push": "npx lint-staged"
