@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync';
+import startGame from '../index.js';
 
 const getRandomNumber = () => Math.floor(Math.random() * 100);
 const getRandomOperator = () => {
@@ -32,32 +32,8 @@ const getQuestion = () => {
   return { question: `${num1} ${operator} ${num2}`, correctAnswer };
 };
 
-const startGame = () => {
-  console.log('Welcome to the Brain Games!');
-
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  console.log(getInstructions());
-
-  let correctAnswers = 0;
-
-  while (correctAnswers < 3) {
-    const questionData = getQuestion();
-    console.log(`Question: ${questionData.question}`);
-
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if (userAnswer !== questionData.correctAnswer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${questionData.correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
-      return;
-    }
-
-    console.log('Correct!');
-    correctAnswers += 1;
-  }
-
-  console.log(`Congratulations, ${name}!`);
+const startExpressionGame = () => {
+  startGame(getQuestion, getInstructions());
 };
 
-export default startGame;
+export default startExpressionGame;

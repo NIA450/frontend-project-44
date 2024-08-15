@@ -1,16 +1,16 @@
 import readlineSync from 'readline-sync';
 
-const runGame = (game) => {
+const startGame = (getQuestion, instructions) => {
   console.log('Welcome to the Brain Games!');
 
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log(game.getInstructions());
+  console.log(instructions);
 
   let correctAnswers = 0;
 
   while (correctAnswers < 3) {
-    const questionData = game.getQuestion();
+    const questionData = getQuestion();
     console.log(`Question: ${questionData.question}`);
 
     const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
@@ -30,4 +30,4 @@ const runGame = (game) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export default runGame;
+export default startGame;
