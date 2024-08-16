@@ -1,26 +1,27 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/NIA450/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/NIA450/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/NIA450/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/df5e57312bf5c7eb1923/maintainability" /></a>
-# Игровой Проект "Brain Games"
+# Brain Games Project
 
-Добро пожаловать в "Brain Games"! Этот проект предлагает пять увлекательных логических игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
+Welcome to "Brain Games"! This project offers five engaging logic games built on the principles of popular mobile applications for brain training. Each game asks questions that require correct answers. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt the player to try again.
 
-## Игры
+## Games
 
-### 1. Игра "Калькулятор"
-В этой игре вам будут представлены арифметические выражения, которые необходимо вычислить. Задачи могут включать сложение, вычитание, умножение и деление.
+### 1. Game "Calculator"
+In this game, you will be presented with arithmetic expressions that need to be calculated. Tasks may include addition, subtraction, multiplication, and division.
 
-### 2. Игра "Прогрессия"
-В этой игре вам нужно найти пропущенные числа в последовательности. Вы будете получать ряд чисел с пропущенными элементами, и ваша задача – определить, какое число должно стоять на месте пропуска.
+### 2. Game "Progression"
+In this game, you need to find the missing numbers in a sequence. You will receive a series of numbers with missing elements, and your task is to determine which number should fill the gap.
 
-### 3. Игра "Определение Четного Числа"
-В этой игре вам будут даны числа, и вы должны будете определить, является ли каждое из них четным. Правильные ответы помогут вам пройти игру.
+### 3. Game "Even Number Identification"
+In this game, you will be given numbers, and you must determine whether each of them is even. Correct answers will help you complete the game.
 
-### 4. Игра "Наибольший Общий Делитель (НОД)"
-В этой игре вам нужно найти наибольший общий делитель двух заданных чисел. У вас будет несколько попыток, чтобы дать правильный ответ.
+### 4. Game "Greatest Common Divisor (GCD)"
+In this game, you need to find the greatest common divisor of two given numbers. You will have several attempts to provide the correct answer.
 
-### 5. Игра "Определение Простого Числа"
-В этой игре вам нужно определить, является ли заданное число простым. Вы будете получать числа наугад, и ваша задача – ответить правильно, используя ваши знания о простых числах.
+### 5. Game "Prime Number Identification"
+In this game, you need to determine whether a given number is prime. You will receive random numbers, and your task is to answer correctly using your knowledge of prime numbers.
+
 
 
    
