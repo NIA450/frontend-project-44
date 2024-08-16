@@ -22,6 +22,18 @@ In this game, you need to find the greatest common divisor of two given numbers.
 ### 5. Game "Prime Number Identification"
 In this game, you need to determine whether a given number is prime. You will receive random numbers, and your task is to answer correctly using your knowledge of prime numbers.
 
+## Installation
+
+To install and run the project, follow this step:
+Clone the repository:https://github.com/NIA450/frontend-project-44
+Navigate to the project directory
+Install the dependencies
+Running the Game
+
+## Contribution
+
+If you would like to contribute to the project, please create a pull request or open an issue for discussion.
+   
 
 
    
