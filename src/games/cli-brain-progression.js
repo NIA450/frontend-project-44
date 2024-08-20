@@ -8,7 +8,7 @@ const generateProgression = (length, start, step, hiddenIndex) => {
   const correctAnswer = progression[hiddenIndex];
   progression[hiddenIndex] = '..';
   return {
-    question: progression.join(' '),
+    question: `Question: ${progression.join(' ')}`,
     correctAnswer: correctAnswer.toString(),
   };
 };
