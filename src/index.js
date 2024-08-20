@@ -1,5 +1,9 @@
 import readlineSync from 'readline-sync';
 
+const MAX_CORRECT_ANSWERS = 3;
+
+const getRandomNumber = () => Math.floor(Math.random() * 100);
+
 const startGame = (getQuestion, instructions) => {
   console.log('Welcome to the Brain Games!');
 
@@ -9,8 +13,8 @@ const startGame = (getQuestion, instructions) => {
 
   let correctAnswers = 0;
 
-  while (correctAnswers < 3) {
-    const questionData = getQuestion();
+  while (correctAnswers < MAX_CORRECT_ANSWERS) {
+    const questionData = getQuestion(getRandomNumber);
     console.log(`Question: ${questionData.question}`);
 
     const userAnswer = readlineSync.question('Your answer: ').toLowerCase();

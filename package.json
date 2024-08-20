@@ -1,7 +1,7 @@
 {
-  "name": "@hexlet/code",
+  "name": "@hexlet/nodejs-package",
   "version": "0.0.3",
-  "description": "Node.js boilerplate package",
+  "description": "Package with five engaging logic games",
   "bin": {
     "nodejs-package": "bin/nodejs-package.js",
     "brain-games": "bin/brain-games.js",
@@ -17,14 +17,11 @@
   "engines": {
     "node": ">=14"
   },
-  "scripts": {
-    "test": "npx jest"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hexlet-boilerplates/nodejs-package.git"
   },
-  "author": "Kirill Mokevnin",
+  "author": "Evgenia Troshina",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hexlet-boilerplates/nodejs-package/issues"
@@ -32,8 +29,6 @@
   "type": "module",
   "homepage": "https://github.com/hexlet-boilerplates/nodejs-package#readme",
   "dependencies": {
-    "debug": "^4.3.5",
-    "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },
   "lint-staged": {

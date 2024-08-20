@@ -1,6 +1,5 @@
 import startGame from '../index.js';
 
-const getRandomNumber = () => Math.floor(Math.random() * 100);
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
   return operators[Math.floor(Math.random() * operators.length)];
@@ -8,7 +7,7 @@ const getRandomOperator = () => {
 
 const getInstructions = () => 'What is the result of the expression?';
 
-const getQuestion = () => {
+const getQuestion = (getRandomNumber) => {
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const operator = getRandomOperator();
@@ -26,7 +25,7 @@ const getQuestion = () => {
       correctAnswer = (num1 * num2).toString();
       break;
     default:
-      break;
+      throw new Error(`Unexpected operator: ${operator}`);
   }
 
   return { question: `${num1} ${operator} ${num2}`, correctAnswer };
