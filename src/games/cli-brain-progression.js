@@ -8,18 +8,18 @@ const generateProgression = (length, start, step, hiddenIndex) => {
   const correctAnswer = progression[hiddenIndex];
   progression[hiddenIndex] = '..';
   return {
-    question: `Question: ${progression.join(' ')}`,
+    question: progression.join(' '),
     correctAnswer: correctAnswer.toString(),
   };
 };
 
 const getInstructions = () => 'What number is missing in the progression?';
 
-const getQuestion = (getRandomNumber) => {
-  const length = 5 + Math.floor(getRandomNumber() * 6);
-  const start = Math.floor(getRandomNumber() * 10);
-  const step = 1 + Math.floor(getRandomNumber() * 5);
-  const hiddenIndex = Math.floor(getRandomNumber() * length);
+const getQuestion = () => {
+  const length = Math.floor(Math.random() * 6) + 5;
+  const start = Math.floor(Math.random() * 10);
+  const step = Math.floor(Math.random() * 5) + 1;
+  const hiddenIndex = Math.floor(Math.random() * length);
 
   return generateProgression(length, start, step, hiddenIndex);
 };
