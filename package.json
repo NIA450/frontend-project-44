@@ -1,5 +1,5 @@
 {
-  "name": "@hexlet/nodejs-package",
+  "name": "@hexlet/code",
   "version": "0.0.3",
   "description": "Package with five engaging logic games",
   "bin": {
